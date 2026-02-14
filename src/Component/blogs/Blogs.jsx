@@ -12,7 +12,7 @@ const Blogs = () => {
 
 //   console.log(blogs);
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-2">
         {
             blogs.map(blog => <Blog blog={blog}></Blog>)
         }
