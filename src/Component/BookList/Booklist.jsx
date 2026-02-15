@@ -2,8 +2,9 @@ import React from 'react';
 
 const Booklist = () => {
     return (
-        <div>
-          <p>this is reading time</p>  
+        <div >
+          <p> Reading time</p>  
+          <p> Bookmarked Count</p>  
         </div>
     );
 };

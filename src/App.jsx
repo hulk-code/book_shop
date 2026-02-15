@@ -11,7 +11,7 @@ function App() {
         <div className="blogsContainer w-[70%]">
           <Blogs></Blogs>
         </div>
-        <div className="bookContainer bg-amber-200 border border-amber-800 w-[30%]">
+        <div className="bookContainer text-center bg-amber-200 border border-amber-800 w-[30%]">
           <Booklist></Booklist>
         </div>
       </div>
