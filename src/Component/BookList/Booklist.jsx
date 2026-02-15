@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Booklist = () => {
+const Booklist = ({readTime}) => {
+    console.log(readTime);
     return (
         <div >
           <p> Reading time</p>  
