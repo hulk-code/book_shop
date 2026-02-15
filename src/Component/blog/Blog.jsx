@@ -1,8 +1,7 @@
 import React from "react";
 import { LuBookMarked } from "react-icons/lu";
 
-const Blog = ({ blog,handleBookmarked }) => {
-
+const Blog = ({ blog, handleBookmarked, handleReadingTime }) => {
   // console.log(blog);
   return (
     <div>
@@ -18,15 +17,23 @@ const Blog = ({ blog,handleBookmarked }) => {
               <img src={blog.author_img} alt="Shoes" className="w-15" />
             </figure>
 
-           
-            <div className=""><button onClick={()=> handleBookmarked(blog)}><LuBookMarked size={30} /></button> </div>
+            <div className="">
+              <button onClick={() => handleBookmarked(blog)}>
+                <LuBookMarked size={30} />
+              </button>{" "}
+            </div>
           </h2>
           <p>
             A card component has a figure, a body part, and inside body there
             are title and actions parts
           </p>
           <div className="card-actions justify-end">
-            <button onClick={()=> handleBookmarked(blog)} className="btn btn-soft btn-primary">Mark as read</button>
+            <button
+              onClick={() => handleReadingTime(blog.reading_time , blog.id)}
+              className="btn btn-soft btn-primary"
+            >
+             Mark as Read
+            </button>
           </div>
         </div>
       </div>
